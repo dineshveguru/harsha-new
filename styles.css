@@ -6,12 +6,13 @@
     #cf23cf,
     #eedd44
   );
-  --gradient-color-two: linear-gradient(to right, #f32170, #cf23cf);
+  --gradient-color-two: linear-gradient(to right, #cf23cf, #1a0065);
+  --gradient-color-three: linear-gradient(to right, #01e296, #06629b);
 }
 
 body {
   font-size: 62.5%;
-  padding-top: 6rem;
+  padding-top: 7rem;
   height: 200vh;
   background-color: #f3f7f7;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -65,7 +66,7 @@ button {
 }
 
 .grid-container {
-  background-image: url(images/daniel-olah-idednB9qCrA-unsplash.jpg);
+  background-image: url(images/new2.jpg);
   background-repeat: no-repeat;
   display: grid;
   grid-template-rows: 1fr;
@@ -112,4 +113,29 @@ button {
 
 .btn-gradient {
   background: var(--gradient-color-two);
+}
+
+.uses-container-layout {
+  margin-top: 3rem;
+  background-color: #e5e7e9;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
+  margin-left: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.gradient-heading {
+  font-size: 3rem;
+  background: var(--gradient-color-three);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
