@@ -4,10 +4,11 @@
     #f32170,
     #ff6b08,
     #cf23cf,
-    #eedd44
+    #6ba7d5
   );
-  --gradient-color-two: linear-gradient(to right, #cf23cf, #1a0065);
-  --gradient-color-three: linear-gradient(to right, #01e296, #06629b);
+  --gradient-color-two: linear-gradient(to right, #ecd144, #0cbaba);
+  --gradient-color-three: linear-gradient(to right, #01e296, #a8e063);
+  --gradient-background: linear-gradient(#0c0c0c, #4834d4);
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 .navbar {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0px;
@@ -29,6 +30,7 @@ body {
   padding-left: 2rem;
   padding-right: 3rem;
   padding-bottom: 1rem;
+  z-index: 100;
 }
 
 .main-logo {
@@ -66,14 +68,15 @@ button {
 }
 
 .grid-container {
-  background-image: url(images/new2.jpg);
-  background-repeat: no-repeat;
+  background-image: url(images/shubham-dhage-cSGIBtF50Zc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
   background-color: #fff;
   border-radius: 1rem;
-  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.7);
   object-fit: cover;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -103,6 +106,7 @@ button {
   -webkit-background-clip: text;
   margin-top: 3rem;
   margin-left: 2rem;
+  margin-right: 20rem;
   padding-bottom: 2rem;
 }
 
@@ -118,10 +122,13 @@ button {
 .uses-container-layout {
   margin-top: 3rem;
   background-color: #e5e7e9;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .flex-container {
   display: flex;
+  margin-left: 10rem;
 }
 
 .icon {
@@ -138,4 +145,26 @@ button {
   background: var(--gradient-color-three);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #cccdcf;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+
+.flex-container h1 {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+.card-one {
+  background-image: url(images/fakurian-design-PjG_SXDkpwQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 10rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
 }
