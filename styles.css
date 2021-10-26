@@ -15,7 +15,7 @@ body {
   font-size: 62.5%;
   padding-top: 7rem;
   height: 200vh;
-  background-color: #f3f7f7;
+  background-color: #e5e7e9;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .main-logo {
-  width: 10rem;
+  width: 12rem;
   height: 3rem;
 }
 
@@ -121,9 +121,13 @@ button {
 
 .uses-container-layout {
   margin-top: 3rem;
-  background-color: #e5e7e9;
+  background-color: #f3f7f7;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
 .flex-container {
@@ -160,11 +164,28 @@ hr {
   margin-top: 2rem;
 }
 
-.card-one {
-  background-image: url(images/fakurian-design-PjG_SXDkpwQ-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  margin-right: 10rem;
+.card-layout {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+}
+
+.card-container {
+  margin-right: 1rem;
   margin-left: 1rem;
+  padding: 2rem;
   border-radius: 1rem;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.card-container h1 {
+  font-size: 3rem;
+}
+
+.card-container p {
+  font-size: 1rem;
 }
